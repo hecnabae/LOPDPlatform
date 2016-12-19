@@ -21,6 +21,31 @@ exports.endpoints = [
         path: '/empresa',
         config: Empresa.create
     },
+    {
+        method: 'GET',
+        path: '/empresa',
+        config: Empresa.getAll
+    },
+    {
+        method: 'GET',
+        path: '/empresa/{idEmpresa}',
+        config: Empresa.getOne
+    },
+    {
+        method: 'PUT',
+        path: '/empresa/{idEmpresa}',
+        config: Empresa.update
+    },
+    {
+        method: 'DELETE',
+        path: '/empresa/{idEmpresa}',
+        config: Empresa.remove
+    },
+    {
+        method: 'DELETE',
+        path: '/emrpesa',
+        config: Empresa.removeAll
+    },
 
     //---------------------------->
     // FICHERO

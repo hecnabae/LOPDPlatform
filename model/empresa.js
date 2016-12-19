@@ -17,25 +17,28 @@ var EmpresaSchema = new Schema({
         type: String,
         required: true
     },
-    direccion: {
-        type: String,
-        required: true
-    },
-    codigoPostal: {
-        type: String,
-        required: true
-    },
-    poblacion: {},
-    provincia: {},
-    pais: {},
-    delegaciones: {},
-    responsable: {},
-    empresaNuevaCreacion: {},
-    representanteLegalTrabajadores: {},
-    actividad: {},
-    consultor: {},
-    colaborador: {},
-    estado: {}
+    email: {
+        type: String
+    }
+    // direccion: {
+    //     type: String,
+    //     required: true
+    // },
+    // codigoPostal: {
+    //     type: String,
+    //     required: true
+    // },
+    // poblacion: {},
+    // provincia: {},
+    // pais: {},
+    // delegaciones: {},
+    // responsable: {},
+    // empresaNuevaCreacion: {},
+    // representanteLegalTrabajadores: {},
+    // actividad: {},
+    // consultor: {},
+    // colaborador: {},
+    // estado: {}
 });
 
 var empresa = mongoose.model('empresa', EmpresaSchema);
